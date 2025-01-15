@@ -23,7 +23,7 @@ app.use("/leitores", leitorRoutes);
 AppDataSource.initialize()
   .then(async () => {
     console.log("Sua conexão com banco de dados está ok");
-    app.listen(5432, () => {
+    app.listen(3333, () => {
       console.log("Servidor rodando na porta 5432");
     });
   })
